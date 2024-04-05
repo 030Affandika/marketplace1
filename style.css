@@ -1,0 +1,124 @@
+
+/* navbar */
+nav{
+    padding: 15px;
+}
+.nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-left: 20px; /* Sesuaikan jarak antar item menu */
+}
+
+ul li:first-child {
+    margin-left: 0; /* Hilangkan margin kiri pada item pertama */
+}
+a{
+    margin-left: 1em;
+}
+
+.search-nav{
+    border: solid black 1pt;
+    border-radius: 10px
+}
+.gsearch{
+    border-radius: 10px;
+    border: none;
+}
+
+/* section carousel */
+.section-1 {
+    padding-top: 10vh;
+    margin: auto;
+  }
+
+
+/* section history */
+.section-2{
+    margin-top: 10vh;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5) inset;
+    background-color: rgb(176, 0, 0);
+
+}
+.section-history{
+    margin-left: 3vw;
+    padding: 5vh;
+}
+.section-history-title{
+    color: #fff;
+    font-family: sans-serif;
+}
+.section-history-content{
+    width: 40%;
+    color: #fff;
+    font-family: poppins;
+}
+
+/* footer */
+
+/* CSS untuk layar tablet dan potret */
+@media only screen and (max-width: 768px) {
+    nav ul {
+        display: none; /* Sembunyikan daftar menu */
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    nav .hamburger {
+        display: block; /* Tampilkan hamburger icon */
+    }
+    .logo{
+        display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    }
+    
+}
+
+/* CSS untuk hamburger icon */
+.hamburger {
+    display: none; /* Sembunyikan hamburger icon secara default */
+}
+
+/* CSS tambahan */
+/* Sesuaikan warna, ukuran, dan posisi hamburger icon sesuai kebutuhan */
+/* CSS untuk layar potret */
+@media only screen and (orientation: portrait) {
+    nav ul {
+        display: none; /* Sembunyikan daftar menu */
+    }
+    .gsearch{
+        display: none;
+    }
+    .carousel-web{
+        display: none;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    .carousel-potrait{
+        display: none;
+    }
+}
